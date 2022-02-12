@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kokoa Talk</title>
+    <title>Welcome to Kokoa Clone</title>
   </head>
   <body>
+    <!--Status Bar-->
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -16,10 +18,27 @@
       </div>
       <div class="status-bar__column">
         <span>110%</span>
-        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
         <i class="fa-solid fa-bolt-lightning"></i>
       </div>
     </div>
+
+    <!--Header-->
+    <header class="welcom-header">
+      <h1 class="welcom-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcom-header__text">
+        If you have a Kokoa Account,<br />
+        log in with your email or phone number.
+      </p>
+    </header>
+
+    <!--Login Form-->
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
 
     <script
       src="https://kit.fontawesome.com/b8a5c71661.js"
